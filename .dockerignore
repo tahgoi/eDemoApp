@@ -5,3 +5,5 @@ pyc
 *.pyd
 .env
 venv/
+.notes
+config.yaml
