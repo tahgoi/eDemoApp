@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-*.pyo
-pyc
-*.pyd
-.env
-venv/
-.notes
-config.yaml
