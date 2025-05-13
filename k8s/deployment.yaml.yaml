@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: e-demoapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: e-demoapp
+  template:
+    metadata:
+      labels:
+        app: e-demoapp
+    spec:
+      containers:
+      - name: e-demoapp
+        image: jstaguan/tj27_edemoapp:latest
+        ports:
+        - containerPort: 8520
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: e-demoapp
+spec:
+  type: LoadBalancer
+  selector:
+    app: e-demoapp
+  ports:
+    - protocol: TCP
+      port: 8520
+      targetPort: 8520
