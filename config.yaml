@@ -1,14 +1,14 @@
 credentials:
   usernames:
-    yellowcar:  # The username for the yellowcar account  #bas64 encoding 
-      email: yellowcar@arrow.com
-      name: Yello OwCar
-      password: xxxxxx #bas64 encoding 
-            
+    rjoeneil:
+      email: joeX@X.com
+      name: Joe X
+      password: $2b$12$D3bhzEufor4GjXvDa8m8EeJHpH1xLsr.zR7KcJ6EtPRYyaNhquAw6
+      
 cookie:
   expiry_days: 0
   key: random_signature_key # Must be string
   name: random_cookie_name
 preauthorized:
   emails:
-  - yellowcar@
+  - joeX@X.com
