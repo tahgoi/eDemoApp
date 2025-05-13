@@ -4,8 +4,10 @@ __pycache__/
 pyc
 *.pyd
 .env
-.dockerignore
 venv/
 .notes*
 config.yaml
-.ignore
+.gitignore
+.dockerignore
+.Dockerfile
+.DS_Store
